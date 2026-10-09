@@ -1,0 +1,238 @@
+/* Auteur: HvdB */
+/* === LIB/TOKENS.CSS ===
+   De ontwerptokens van de Duwbakkenplanning: kleuren, rondingen, schaduwen en
+   overgangen.
+
+   Twee thema's: donker (:root) en licht (body.light-theme).
+
+   Let op: de Tailwind-configuratie in de planner verwijst naar deze namen
+   (bg: 'var(--bg)' enzovoort). Hernoem je er een, pas dan ook dat blok aan. */
+
+:root{
+  /* De app staat standaard donker. Zonder deze regel tekent de browser zijn eigen
+     onderdelen in lichte stand op een bijna zwarte ondergrond: de schuifbalk van
+     de pagina, het vinkje en de drie schuifjes in het instellingenpaneel, en de
+     uitklaplijst van een keuzemenu. Die onderdelen hebben geen eigen opmaak in de
+     app, dus dit is de enige plek waar het recht te zetten valt. Een <meta> in de
+     head kan het niet: het thema is een schakelaar, geen vaste stand. */
+  color-scheme: dark;
+
+  /* Was #10161D — vrijwel dezelfde navy-tint als het referentieontwerp
+     (~#0d1620), nu er letterlijk op afgestemd. */
+  --bg: #0D1620;
+  --surface: #1A222B;
+  --surface-2: #212B36;
+  --line: #2C3844;
+  --text: #E9E5DC;
+  --text-dim: #8D98A5;
+  /* Operationeel oranje: de originele hoofdkleur (#C4652E) is teruggekeerd als
+     precision instrument. Dit is de kleur die duwbakken-planners kennen en
+     vertrouwen. De kleurkiezer bij Gebruikers (ACCENTEN) blijft intact en
+     wint hier gewoon van zodra iemand een andere hoofdkleur kiest — dit is
+     alleen de nieuwe standaardwaarde vóór die keuze. */
+  --rust: #C4652E;
+  --rust-dim: #7A4022;
+  /* Tekst op een vlak dat met --rust gevuld is. Oranje vraagt om donkere
+     tekst voor voldoende contrast (4,5:1 of beter) — de eigen achtergrondkleur. */
+  --op-rust: #0D1620;
+  --teal: #4C93A3;
+  /* Vaste, van de hoofdkleur losstaande accentkleur voor iconen (het
+     goud/geel uit het referentieontwerp) — 9,91:1 tegen --bg. */
+  --gold: #E8B93F;
+  --done: #5E8A66;
+  /* Was #B5533B — dat haalt maar 3,69:1 tegen --bg, onder de 4,5:1 die
+     gewone tekst nodig heeft (WCAG AA), en dit is nota bene de kleur van
+     een waarschuwing ("gepland: X", "Alles wissen"). Deze tint blijft in
+     dezelfde rood-oranje familie (hue 12-13°, --rust zit op 22° en blijft
+     dus te onderscheiden) maar is lichter en iets voller, en haalt 4,65:1. */
+  --danger: #CB6244;
+
+  /* Tekst op een vlak dat met --done of --danger gevuld is. Wit haalde daar
+     in de donkere modus maar 3,96:1 en 3,91:1 — onder de 4,5:1 voor gewone
+     tekst. De eigen achtergrondkleur haalt 4,60:1 en 4,66:1. In de lichte
+     modus zijn de vlakken donker genoeg voor wit (5,07:1 en 7,08:1). */
+  --on-done: #0D1620;
+  --on-danger: #0D1620;
+
+  /* Twee rondingen, meer heeft de app niet nodig. --radius blijft bestaan
+     omdat oudere regels ernaar verwijzen, en wijst nu naar de kleine. */
+  --radius-sm: 6px;   /* knoppen, chips, invoervelden, tabbladen */
+  --radius-md: 10px;  /* kaarten, panelen, modals */
+  --radius: var(--radius-sm);
+
+  /* Drie diepten. De ring om een aangemeerde tegel is geen diepte maar een
+     markering en valt hier bewust buiten. */
+  --shadow-1: 0 1px 2px rgba(0,0,0,.28);
+  --shadow-2: 0 4px 12px rgba(0,0,0,.35);
+  --shadow-3: 0 12px 40px rgba(0,0,0,.5);
+
+  /* Overgangen animeren, geen versieringen. Boven 250 ms gaat het vertragen
+     aanvoelen, dus dat is de bovengrens. */
+  --dur-fast: 120ms;   /* kleur, doorzichtigheid */
+  --dur:      180ms;   /* positie, formaat */
+  --dur-slow: 250ms;   /* modals, paneelwissel */
+  --ease:     cubic-bezier(.2, 0, 0, 1);   /* snel weg, zacht aan */
+
+  /* Haventekening. Deze stonden hard op wit in de app zelf, waardoor de hele
+     tekening in de lichte modus onzichtbaar was: witte baknummers, wit raster
+     en een witte plaatsnaam op een lichte ondergrond. Nu volgen ze het thema. */
+  --haven-raster:        rgba(255,255,255,.42);   /* stippelraster bakplekken */
+  --haven-plaatsnaam:    rgba(255,255,255,.13);   /* naam ín een bakkenplaats */
+  --haven-baktekst:      #FFFFFF;                 /* baknummer */
+  --haven-baktekst-rand: rgba(0,0,0,.4);          /* randje eromheen, houdt het los van de kleur eronder */
+  --haven-gekozen:       #FFFFFF;                 /* omlijning van een aangetikte bak */
+  --haven-sleepschaduw:  rgba(0,0,0,.55);
+
+  /* Stippelraster achter de hele pagina (referentieontwerp), zeer laag
+     contrast — het mag de leesbaarheid nergens aantasten, alleen net
+     zichtbaar zijn tegen de kale achtergrond. */
+  --bg-grid-dot: rgba(255,255,255,.05);
+
+  /* Kade-weergave van het Overzicht (de tweede stand naast de tegels). Eén
+     idee draagt dat scherm: hoeveel van een bak gevuld is, ís wat erin zit.
+     Daar hoort een rompkleur bij die niets anders betekent, en een lege bak
+     die alleen een omtrek is — die ligt hoog, er is geen lading te zien.
+
+     Waarom eigen tokens en niet --rust of --teal: die twee hebben in de app
+     al een betekenis (hoofdkleur, accent) en de gebruiker mag --rust zelf
+     kiezen. Zou de romp daarin meelopen, dan verandert de betekenis van de
+     vulling zodra iemand een andere accentkleur kiest. --gold blijft wél het
+     sein: die kleur is in de hele app al "hier moet je naar kijken".
+
+     Het baknummer staat over de vulling héén, en bij een half geladen bak
+     staat het deels op de vulling en deels op het kale vlak eronder. Eén
+     tekstkleur moet dus op allebei leesbaar zijn. Daarom is de romp donker
+     gehouden in de donkere modus en licht in de lichte: hij verschilt genoeg
+     van --surface om als waterlijn te lezen (1,6 à 2,1:1), terwijl --kade-nr
+     op de romp én op --surface ruim boven 4,5:1 blijft. Een lichtere romp
+     zag er mooier uit maar haalde met wit maar 2,2:1. */
+  --kade-romp:  #2E5866;   /* de vulling; hoeveel je ervan ziet is de lading */
+  --kade-leeg:  #6E9AA8;   /* omtrek van een lege bak, herkenbaar dezelfde hue */
+  --kade-vrij:  #2C3844;   /* stippellijn van een plek waar niets ligt */
+  --kade-nr:    #E4E8E3;   /* baknummer; 7,6:1 op de romp, 12:1 op --surface */
+
+  /* Reliëf op knoppen en tegels, naar het voorbeeld van de knoppen uit
+     Windows 95: licht langs de bovenkant en links, donker langs de onderkant
+     en rechts, in twee stappen zodat de rand dikte lijkt te hebben. Ingedrukt
+     draait het om — dan lijkt het licht van de andere kant te komen en zakt
+     het vlak weg.
+
+     Twee lagen per zijde, niet één: met één lijn krijg je een randje, met
+     twee krijg je een schuine kant. Dat verschil maakt het knopgevoel.
+
+     Op een donkere ondergrond kan wit niet vol worden gebruikt — dat wordt
+     een harde streep in plaats van glans. Vandaar doorzichtigheid. */
+  --bevel-licht:        rgba(255,255,255,.17);
+  --bevel-licht-zacht:  rgba(255,255,255,.07);
+  --bevel-donker:       rgba(0,0,0,.55);
+  --bevel-donker-zacht: rgba(0,0,0,.30);
+
+  --bevel-uit: inset  1px  1px 0 var(--bevel-licht),
+               inset -1px -1px 0 var(--bevel-donker),
+               inset  2px  2px 0 var(--bevel-licht-zacht),
+               inset -2px -2px 0 var(--bevel-donker-zacht);
+  --bevel-in:  inset  1px  1px 0 var(--bevel-donker),
+               inset -1px -1px 0 var(--bevel-licht-zacht),
+               inset  2px  2px 0 var(--bevel-donker-zacht),
+               inset -2px -2px 0 rgba(255,255,255,.04);
+
+  /* Diepere variant voor grote vlakken. Een knop van 19 px heeft aan twee
+     lagen genoeg, maar op een tegel van een paar honderd pixels valt zo'n
+     randje weg. Drie lagen en een vollere schaduwkant geven daar de dikte
+     die je op knopformaat al bij twee hebt. */
+  --bevel-uit-diep: inset  1px  1px 0 var(--bevel-licht-vol),
+                    inset -1px -1px 0 var(--bevel-donker-vol),
+                    inset  2px  2px 0 var(--bevel-licht),
+                    inset -2px -2px 0 var(--bevel-donker),
+                    inset  3px  3px 0 var(--bevel-licht-zacht),
+                    inset -3px -3px 0 var(--bevel-donker-zacht);
+  --bevel-licht-vol:  rgba(255,255,255,.26);
+  --bevel-donker-vol: rgba(0,0,0,.70);
+}
+
+/* Eigenaren van de bakken (H = HGK, V = Veerhaven, E = Espera, W = Willem Zwaan,
+   A = Ancis/Antwerpia): een vlak met een tekstkleur erbij, allebei op contrast
+   gecontroleerd. Donker hier, licht in body.light-theme. */
+:root{
+  --eig-h-bg: #1F3556; --eig-h-tekst: #B4CDF7;
+  --eig-v-bg: #17402D; --eig-v-tekst: #A3E0C1;
+  --eig-e-bg: #4A3417; --eig-e-tekst: #F2CB98;
+  --eig-w-bg: #3A2757; --eig-w-tekst: #D9C2F4;
+  --eig-a-bg: #4D2133; --eig-a-tekst: #F5BFD3;
+}
+
+/* Lichte, kleurenblind-vriendelijke modus. Wordt nu alleen in de planner
+   aangezet; de viewer heeft de schakelaar niet, maar erft de regel wel zodat
+   hij meekan zodra dat gewenst is. */
+body.light-theme{
+  color-scheme: light;
+  --bg: #F7F3EC;
+  --surface: #FFFDF9;
+  --surface-2: #F1E9DD;
+  --line: #E8DFD1;
+  --text: #2B2119;
+  --text-dim: #6F6355;
+  /* Lime zelf leest niet als tekst/vlak op een lichte ondergrond (1,2:1) —
+     dezelfde tint als in de donkere modus, maar donker genoeg gemaakt om
+     als vlak met witte tekst te werken (--op-rust hieronder, 6,11:1) en als
+     losse tekstkleur zelf ook te lezen (4,53:1 tegen --bg). Blijft
+     herkenbaar dezelfde hue als de lime uit de donkere modus, alleen veel
+     donkerder. */
+  --rust: #F26B3A;
+  --rust-dim: #C94E22;
+  /* In de lichte modus is de (nu olijf-lime) accentkleur al donker genoeg;
+     wit haalt daar 6,11:1 en blijft dus staan. */
+  --op-rust: #2B2119;
+  --teal: #2563EB;
+  /* Donkerder goud dan de donkere modus — #E8B93F haalt op deze lichte
+     ondergrond maar 1,68:1, deze tint haalt 5,54:1. */
+  --gold: #7A5F0E;
+  --done: #178055;
+  --danger: #D63A3F;
+  --on-done: #FFFFFF;
+  --on-danger: #FFFFFF;
+  /* Op een lichte ondergrond ogen dezelfde zwartwaarden vuil; zachter dus. */
+  --shadow-1: 0 1px 2px rgba(70,45,20,.06);
+  --shadow-2: 0 4px 12px rgba(70,45,20,.10);
+  --shadow-3: 0 12px 40px rgba(70,45,20,.18);
+
+  /* Haven omgekeerd: donkere tekst en lijnen op de lichte ondergrond. */
+  --haven-raster: rgba(43,33,25,.30);
+  --haven-plaatsnaam: rgba(43,33,25,.14);
+  --haven-baktekst: #2B2119;
+  --haven-baktekst-rand: rgba(255,255,255,.65);
+  --haven-gekozen: #2B2119;
+
+  /* Kade-weergave omgekeerd: hier is de romp juist lichter dan de ondergrond,
+     zodat hetzelfde donkere baknummer op de vulling (8:1) én op --surface
+     (14:1) leesbaar blijft. Zelfde hue als in de donkere modus. */
+  --kade-romp:  #93B8C4;
+  --kade-leeg:  #2B4B56;
+  --kade-vrij: #D9CDBC;
+  --kade-nr: #2B2119;
+
+  /* Licht grijs vraagt om een vol wit hoogsel — dat was nu juist de look van
+     die oude knoppen. De schaduwkant blijft zachter dan zwart, anders wordt
+     het roet op een lichte ondergrond. */
+  --bevel-licht:        rgba(255,255,255,.95);
+  --bevel-licht-zacht:  rgba(255,255,255,.55);
+  --bevel-donker:       rgba(16,22,29,.42);
+  --bevel-donker-zacht: rgba(16,22,29,.20);
+  --bevel-licht-vol:    #ffffff;
+  --bevel-donker-vol:   rgba(16,22,29,.58);
+  --haven-sleepschaduw:  rgba(16,22,29,.28);
+  --bg-grid-dot: transparent;
+  /* "Calm enterprise": ruimere rondingen en zachte schaduwen in plaats van
+     het knopreliëf. Alleen in de lichte modus; de donkere houdt zijn maten. */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --bevel-uit: var(--shadow-1);
+  --bevel-uit-diep: var(--shadow-1);
+  --bevel-in: inset 0 1px 2px rgba(70,45,20,.12);
+
+  --eig-h-bg: #DCE8FB; --eig-h-tekst: #1E4FA3;
+  --eig-v-bg: #D9F0E4; --eig-v-tekst: #11603F;
+  --eig-e-bg: #FCE6CF; --eig-e-tekst: #8A4A0C;
+  --eig-w-bg: #EADCF8; --eig-w-tekst: #5B2A91;
+  --eig-a-bg: #FBDCE6; --eig-a-tekst: #9A1F4B;
+}

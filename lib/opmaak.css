@@ -1,0 +1,1493 @@
+/* Gemaakt door tools/opmaak-bouwen.js — niet met de hand aanpassen.
+   Bron: het Tailwind-blok en tailwind.config in DintelhavenPlanner.html.
+   stempel: 713e357c1c146cdf */
+.container{ width:100%;
+}
+@media (min-width: 640px){
+ .container{ max-width:640px;
+ }
+}
+@media (min-width: 768px){
+ .container{ max-width:768px;
+ }
+}
+@media (min-width: 1024px){
+ .container{ max-width:1024px;
+ }
+}
+@media (min-width: 1280px){
+ .container{ max-width:1280px;
+ }
+}
+@media (min-width: 1536px){
+ .container{ max-width:1536px;
+ }
+}
+.pointer-events-none{ pointer-events:none;
+}
+.fixed{ position:fixed;
+}
+.absolute{ position:absolute;
+}
+.relative{ position:relative;
+}
+.sticky{ position:sticky;
+}
+.inset-0{ inset:0px;
+}
+.bottom-0{ bottom:0px;
+}
+.top-0{ top:0px;
+}
+.top-\[calc\(100\%\+8px\)\]{ top:calc(100% + 8px);
+}
+.z-20{ z-index:20;
+}
+.z-30{ z-index:30;
+}
+.z-50{ z-index:50;
+}
+.m-0{ margin:0px;
+}
+.mx-2\.5{ margin-left:0.625rem; margin-right:0.625rem;
+}
+.mb-0{ margin-bottom:0px;
+}
+.mb-1{ margin-bottom:0.25rem;
+}
+.mb-1\.5{ margin-bottom:0.375rem;
+}
+.mb-2{ margin-bottom:0.5rem;
+}
+.mb-2\.5{ margin-bottom:0.625rem;
+}
+.mb-3{ margin-bottom:0.75rem;
+}
+.ml-1{ margin-left:0.25rem;
+}
+.ml-auto{ margin-left:auto;
+}
+.mt-0{ margin-top:0px;
+}
+.mt-1{ margin-top:0.25rem;
+}
+.mt-2{ margin-top:0.5rem;
+}
+.mt-2\.5{ margin-top:0.625rem;
+}
+.block{ display:block;
+}
+.inline-block{ display:inline-block;
+}
+.inline{ display:inline;
+}
+.flex{ display:flex;
+}
+.inline-flex{ display:inline-flex;
+}
+.grid{ display:grid;
+}
+.hidden{ display:none;
+}
+.h-4{ height:1rem;
+}
+.h-\[18px\]{ height:18px;
+}
+.h-\[19px\]{ height:19px;
+}
+.h-\[22px\]{ height:22px;
+}
+.max-h-\[220px\]{ max-height:220px;
+}
+.max-h-\[88vh\]{ max-height:88vh;
+}
+.min-h-\[22px\]{ min-height:22px;
+}
+.w-4{ width:1rem;
+}
+.w-5{ width:1.25rem;
+}
+.w-\[19px\]{ width:19px;
+}
+.w-\[230px\]{ width:230px;
+}
+.w-full{ width:100%;
+}
+.min-w-0{ min-width:0px;
+}
+.min-w-\[210px\]{ min-width:210px;
+}
+.max-w-\[420px\]{ max-width:420px;
+}
+.max-w-\[900px\]{ max-width:900px;
+}
+.flex-1{ flex:1 1 0%;
+}
+.shrink-0{ flex-shrink:0;
+}
+.transform{ transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.cursor-grab{ cursor:grab;
+}
+.cursor-pointer{ cursor:pointer;
+}
+.touch-pan-y{ --tw-pan-y:pan-y; touch-action:var(--tw-pan-x) var(--tw-pan-y) var(--tw-pinch-zoom);
+}
+.select-none{ user-select:none;
+}
+.resize-y{ resize:vertical;
+}
+.resize{ resize:both;
+}
+.appearance-none{ appearance:none;
+}
+.flex-col{ flex-direction:column;
+}
+.flex-wrap{ flex-wrap:wrap;
+}
+.flex-nowrap{ flex-wrap:nowrap;
+}
+.items-end{ align-items:flex-end;
+}
+.items-center{ align-items:center;
+}
+.items-baseline{ align-items:baseline;
+}
+.justify-center{ justify-content:center;
+}
+.gap-0{ gap:0px;
+}
+.gap-0\.5{ gap:0.125rem;
+}
+.gap-1{ gap:0.25rem;
+}
+.gap-1\.5{ gap:0.375rem;
+}
+.gap-2{ gap:0.5rem;
+}
+.gap-2\.5{ gap:0.625rem;
+}
+.gap-3{ gap:0.75rem;
+}
+.gap-x-3{ column-gap:0.75rem;
+}
+.gap-y-0\.5{ row-gap:0.125rem;
+}
+.self-center{ align-self:center;
+}
+.justify-self-center{ justify-self:center;
+}
+.overflow-hidden{ overflow:hidden;
+}
+.overflow-y-auto{ overflow-y:auto;
+}
+.overflow-x-hidden{ overflow-x:hidden;
+}
+.whitespace-nowrap{ white-space:nowrap;
+}
+.rounded-\[10px\]{ border-radius:10px;
+}
+.rounded-\[2px\]{ border-radius:2px;
+}
+.rounded-\[3px\]{ border-radius:3px;
+}
+.rounded-\[4px\]{ border-radius:4px;
+}
+.rounded-\[6px\]{ border-radius:6px;
+}
+.rounded-full{ border-radius:9999px;
+}
+.rounded-lg{ border-radius:var(--radius-md);
+}
+.rounded-md{ border-radius:var(--radius-md);
+}
+.rounded-sm{ border-radius:var(--radius-sm);
+}
+.rounded-t-2xl{ border-top-left-radius:1rem; border-top-right-radius:1rem;
+}
+.border{ border-width:1px;
+}
+.border-0{ border-width:0px;
+}
+.border-2{ border-width:2px;
+}
+.border-\[3px\]{ border-width:3px;
+}
+.border-b{ border-bottom-width:1px;
+}
+.border-b-0{ border-bottom-width:0px;
+}
+.border-t{ border-top-width:1px;
+}
+.border-danger{ border-color:var(--danger);
+}
+.border-line{ border-color:var(--line);
+}
+.border-rust{ border-color:var(--rust);
+}
+.bg-bg{ background-color:var(--bg);
+}
+.bg-black\/70{ background-color:rgb(0 0 0 / 0.7);
+}
+.bg-danger{ background-color:var(--danger);
+}
+.bg-done{ background-color:var(--done);
+}
+.bg-rust{ background-color:var(--rust);
+}
+.bg-surface{ background-color:var(--surface);
+}
+.bg-surface2{ background-color:var(--surface-2);
+}
+.bg-transparent{ background-color:transparent;
+}
+.p-0{ padding:0px;
+}
+.p-2{ padding:0.5rem;
+}
+.px-1{ padding-left:0.25rem; padding-right:0.25rem;
+}
+.px-1\.5{ padding-left:0.375rem; padding-right:0.375rem;
+}
+.px-2{ padding-left:0.5rem; padding-right:0.5rem;
+}
+.px-2\.5{ padding-left:0.625rem; padding-right:0.625rem;
+}
+.px-3{ padding-left:0.75rem; padding-right:0.75rem;
+}
+.px-4{ padding-left:1rem; padding-right:1rem;
+}
+.px-5{ padding-left:1.25rem; padding-right:1.25rem;
+}
+.py-0{ padding-top:0px; padding-bottom:0px;
+}
+.py-0\.5{ padding-top:0.125rem; padding-bottom:0.125rem;
+}
+.py-1{ padding-top:0.25rem; padding-bottom:0.25rem;
+}
+.py-1\.5{ padding-top:0.375rem; padding-bottom:0.375rem;
+}
+.py-2{ padding-top:0.5rem; padding-bottom:0.5rem;
+}
+.py-2\.5{ padding-top:0.625rem; padding-bottom:0.625rem;
+}
+.py-3{ padding-top:0.75rem; padding-bottom:0.75rem;
+}
+.pb-1{ padding-bottom:0.25rem;
+}
+.pb-2\.5{ padding-bottom:0.625rem;
+}
+.pb-6{ padding-bottom:1.5rem;
+}
+.pl-1{ padding-left:0.25rem;
+}
+.pt-1\.5{ padding-top:0.375rem;
+}
+.pt-2\.5{ padding-top:0.625rem;
+}
+.pt-3{ padding-top:0.75rem;
+}
+.pt-3\.5{ padding-top:0.875rem;
+}
+.pt-5{ padding-top:1.25rem;
+}
+.text-left{ text-align:left;
+}
+.text-center{ text-align:center;
+}
+.text-right{ text-align:right;
+}
+.align-middle{ vertical-align:middle;
+}
+.align-super{ vertical-align:super;
+}
+.font-display{ font-family:'Inter', sans-serif;
+}
+.font-mono{ font-family:'JetBrains Mono', monospace;
+}
+.font-sans{ font-family:'Inter', sans-serif;
+}
+.text-\[10px\]{ font-size:10px;
+}
+.text-\[11px\]{ font-size:11px;
+}
+.text-\[12px\]{ font-size:12px;
+}
+.text-\[13\.5px\]{ font-size:13.5px;
+}
+.text-\[13px\]{ font-size:13px;
+}
+.text-\[14px\]{ font-size:14px;
+}
+.text-\[15px\]{ font-size:15px;
+}
+.text-\[16px\]{ font-size:16px;
+}
+.text-\[17px\]{ font-size:17px;
+}
+.text-\[19px\]{ font-size:19px;
+}
+.text-\[20px\]{ font-size:20px;
+}
+.text-\[9px\]{ font-size:9px;
+}
+.text-base{ font-size:1rem; line-height:1.5rem;
+}
+.text-xs{ font-size:0.75rem; line-height:1rem;
+}
+.font-bold{ font-weight:700;
+}
+.font-medium{ font-weight:500;
+}
+.font-normal{ font-weight:400;
+}
+.font-semibold{ font-weight:600;
+}
+.uppercase{ text-transform:uppercase;
+}
+.italic{ font-style:italic;
+}
+.leading-none{ line-height:1;
+}
+.leading-normal{ line-height:1.5;
+}
+.tracking-\[\.2px\]{ letter-spacing:.2px;
+}
+.tracking-tight{ letter-spacing:-0.025em;
+}
+.text-danger{ color:var(--danger);
+}
+.text-dim{ color:var(--text-dim);
+}
+.text-ink{ color:var(--text);
+}
+.text-rust{ color:var(--rust);
+}
+.text-white{ --tw-text-opacity:1; color:rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.opacity-25{ opacity:0.25;
+}
+.opacity-70{ opacity:0.7;
+}
+.opacity-\[\.45\]{ opacity:.45;
+}
+.opacity-\[\.55\]{ opacity:.55;
+}
+.shadow{ --tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); --tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color); box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-2xl{ --tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25); --tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color); box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-3{ --tw-shadow:var(--shadow-3); --tw-shadow-colored:var(--shadow-3); box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.ring{ --tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color); --tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color); box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.blur{ --tw-blur:blur(8px); filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.filter{ filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.transition{ transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+.transition-\[filter\]{ transition-property:filter; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+.transition-all{ transition-property:all; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+.transition-colors{ transition-property:color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+.duration-150{ transition-duration:150ms;
+}
+
+  /* Let op: de kleuren hierboven zijn CSS-variabelen. Tailwind kan daar geen
+     doorzichtigheid in zetten, dus een schuine streep met een percentage
+     achter zo'n kleur laat dit hele blok stuklopen. Gebruik daarvoor een
+     echte Tailwind-kleur (black, white) of een losse rgba in het CSS-blok. */
+  .topbar{ position:sticky; top:0px; z-index:20; display:flex; width:100%; flex-direction:column; border-bottom-width:1px; border-color:var(--line); background-color:var(--bg); padding-left:1rem; padding-right:1rem; padding-top:0.875rem;
+}
+  .topbar h1{ font-family:'Inter', sans-serif; font-size:19px; font-weight:700; letter-spacing:-0.025em; color:var(--text);
+}
+  /* Links in de topbalk: klok boven, versienummer eronder. Dit blok houdt de
+     flex-1 die eerst op .version-tag zat — die tegenwicht houdt de tabbladen
+     in het midden, tegenover de knoppenrij rechts. */
+  .topbar-links{ display:flex; flex:1 1 0%; flex-direction:column; justify-content:center; line-height:1.25;
+}
+  .klok{ white-space:nowrap; font-family:'JetBrains Mono', monospace; font-size:15px; letter-spacing:-0.025em; color:var(--text);
+}
+  .klok .klok-datum{ color:var(--text-dim);
+}
+  /* Versienummer na tijd en datum — stond alleen nog in het ⋯-menu (1.80),
+     maar Herman wil hem weer in één oogopslag zien. Kleiner en gedempter dan
+     de datum: het is een achtergrondfeit, geen onderdeel van de klok zelf. */
+  .klok .klok-versie{ margin-left:0.25rem; font-size:11px; color:var(--text-dim); opacity:.72;
+}
+  .version-tag{ font-family:'JetBrains Mono', monospace; font-size:12px; font-weight:400; color:var(--text-dim);
+}
+  .topbar .sub{ margin-top:0.25rem; font-family:'JetBrains Mono', monospace; font-size:0.75rem; line-height:1rem; color:var(--text-dim);
+}
+
+  /* Rechts uitlijnen: de knoppen beginnen aan de rechterkant en lopen naar
+     links door. De ⋯-knop had ml-auto en slokte daarmee alle vrije ruimte op,
+     waardoor justify-content niets meer te verdelen had. */
+  .action-row{ display:flex; flex:1 1 0%; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:0.5rem;
+}
+  /* Importeren doe je een paar keer per dag; van tabblad wisselen voortdurend.
+     Deze knoppen zijn daarom ingetogen: een lichte tint van de hoofdkleur in
+     plaats van een volle vlakvulling, zodat ze wel bij het palet horen maar de
+     tabbladen ernaast niet overschreeuwen. Ze kleuren op bij hover. */
+  .import-btn{ display:inline-flex; cursor:pointer; align-items:center; gap:0.375rem; white-space:nowrap; border-radius:var(--radius-md); padding-left:0.625rem; padding-right:0.625rem; padding-top:0.25rem; padding-bottom:0.25rem; font-size:11px; font-weight:500; color:var(--text); transition-property:all; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+  .import-btn:focus-visible{ outline-style:solid; outline-width:2px; outline-offset:2px; outline-color:var(--teal);
+}
+  .import-btn:active{ --tw-translate-y:0px; transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+  .import-btn{
+    background: color-mix(in srgb, var(--rust) 12%, transparent);
+    border: 0;
+    box-shadow: var(--bevel-uit);
+  }
+  @media (hover: hover) and (pointer: fine){
+    .import-btn:hover{
+      background: color-mix(in srgb, var(--rust) 22%, transparent);
+      border-color: color-mix(in srgb, var(--rust) 60%, transparent);
+      transform: translateY(-1px);
+    }
+  }
+  .import-btn:active{ box-shadow: var(--bevel-in); transform:translate(1px,1px); }
+  /* Icoon-badge uit het referentieontwerp: één vaste stijl (gestippelde
+     cirkel, goud) voor alle drie de importknoppen, in plaats van elk
+     zijn eigen kleur — bewust niet gemengd met andere badge-stijlen. */
+  .import-btn::before{
+    content: attr(data-icon);
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 20px; height: 20px; margin-right: 2px;
+    border-radius: 50%; border: 1px dashed var(--gold);
+    font-size: 11px; line-height: 1;
+  }
+  .import-btn-undo{ border-width:0px; background-color:var(--surface-2); color:var(--text);
+}
+  .import-btn-undo:hover{ background-color:var(--line);
+}
+  .import-btn-undo{ box-shadow: var(--bevel-uit); }
+
+  .more-btn{ cursor:pointer; white-space:nowrap; border-radius:3px; border-width:0px; background-color:var(--surface); padding-left:0.625rem; padding-right:0.625rem; padding-top:0.375rem; padding-bottom:0.375rem; font-size:12px; font-weight:600; line-height:1; color:var(--text-dim); transition-property:color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+
+  .more-btn:hover{ color:var(--text);
+}
+
+  .more-btn{
+    box-shadow: var(--bevel-uit);
+  }
+  .more-btn:active{ box-shadow: var(--bevel-in); transform:translate(1px,1px); }
+  .more-menu{ position:absolute; top:calc(100% + 8px); z-index:30; display:none; min-width:210px; overflow:hidden; border-radius:var(--radius-md); border-width:1px; border-color:var(--line); background-color:var(--surface); --tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25); --tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color); box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); --tw-shadow-color:rgb(0 0 0 / 0.5); --tw-shadow:var(--tw-shadow-colored);
+    left: 50%;
+    transform: translateX(-50%);
+}
+  .more-menu.open{ display:block;
+}
+  /* Het waren div's met een klikafhandelaar; nu echte knoppen, zodat ze met
+     Tab bereikbaar zijn en met Enter werken. De opmaak moet daarbij hetzelfde
+     blijven: een knop brengt zijn eigen rand, achtergrond en uitlijning mee. */
+  .more-item{ display:block; width:100%; cursor:pointer; white-space:nowrap; border-width:0px; background-color:transparent; padding-left:1rem; padding-right:1rem; padding-top:0.625rem; padding-bottom:0.625rem; text-align:left; font-size:13px; color:var(--text); transition-property:color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+  .more-item:hover{ background-color:var(--surface-2);
+}
+  .more-item{
+    font-family: inherit;
+  }
+  .more-item:not(:last-child){ border-bottom-width:1px; border-color:var(--line);
+}
+  /* Een item vlak vóór een groepskopje krijgt geen eigen randje meer: het
+     kopje brengt al een eigen bovenrand mee, en twee lijnen tegen elkaar aan
+     oogden als een toevallig dubbel lijntje in plaats van een bedoelde knip. */
+  .more-item:has(+ .more-group-label){ border-bottom: 0; }
+  .more-item.danger{ color:var(--danger);
+}
+  .more-group-label{ padding-left:1rem; padding-right:1rem; padding-top:0.625rem; padding-bottom:0.25rem; font-size:11px; font-weight:600; color:var(--text-dim);
+    border-top: 1px solid var(--line);
+}
+  .more-group-label-danger{ color: var(--danger); }
+
+  .tabs{ display:flex; flex-shrink:0; justify-content:center; gap:0.375rem; align-items: center; flex-wrap: nowrap;
+}
+  /* De drie hoofdtabbladen zijn het meest gebruikte element van de app en
+     mogen dat ook uitstralen: ruimer en groter dan de knoppen ernaast. */
+  .tab{ display:flex; flex-shrink:0; cursor:pointer; align-items:center; justify-content:center; gap:0.5rem; white-space:nowrap; border-radius:3px; border-width:0px; background-color:var(--surface); padding-left:1.25rem; padding-right:1.25rem; padding-top:0.625rem; padding-bottom:0.625rem; font-size:15px; font-weight:600; color:var(--text-dim); transition-property:all; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+    box-shadow: var(--bevel-uit), 0 2px 8px rgba(0,0,0,0.2);
+    /* Stond tot 1.197 in hoofdletters, uit het referentieontwerp. Eruit omdat
+       er een telling achter staat ("Planlijst 15"): hoofdletters maken van een
+       woord een label, en een label met een getal erachter leest als een kopje
+       in plaats van als een knop. In gewone schrijfwijze zijn het weer vier
+       bestemmingen. De letterruimte blijft, die doet hier wel werk. */
+    letter-spacing: .01em;
+}
+  .tab:active{ box-shadow: var(--bevel-in); transform:translate(1px,1px); }
+  .tab:not(.subtab){ }
+  @media (hover: hover) and (pointer: fine){
+    .tab:hover:not(.active){ color:var(--text);
+      transform: translateY(-2px);
+      box-shadow: var(--bevel-uit), 0 6px 16px rgba(0,0,0,0.35);
+ }
+  }
+  .tab.active{ background-color:var(--rust);
+    color: var(--op-rust);
+    font-weight: 600;
+    /* Precision instrument: oranje glow rond het actieve tabblad */
+    box-shadow: 0 0 12px rgba(196, 101, 46, 0.3), 0 2px 8px rgba(0,0,0,0.3);
+}
+  @media (hover: hover) and (pointer: fine){
+    .tab.active:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 0 16px rgba(196, 101, 46, 0.4), 0 6px 16px rgba(0,0,0,0.25);
+    }
+  }
+  /* De teller volgt de tekstkleur van het tabblad zelf, alleen wat gedempt.
+     Met een vaste grijstint viel hij weg tegen de gekleurde achtergrond van het
+     actieve tabblad. Zelfde aanpak als .chip .n hieronder. */
+  .tab .count{ margin-left:0.25rem; font-family:'JetBrains Mono', monospace; font-weight:400; color: inherit; opacity: .72;
+}
+  /* Subtabs styling - verborgen totdat parent actief is */
+  .subtabs{ margin-top:0.5rem; display:flex; justify-content:center; gap:0.375rem; display: none;
+}
+  .subtab{ display:inline-flex; cursor:pointer; align-items:center; justify-content:center; gap:0.5rem; border-radius:var(--radius-md); border-width:1px; border-color:var(--line); background-color:var(--surface); padding-left:0.75rem; padding-right:0.75rem; padding-top:0.375rem; padding-bottom:0.375rem; font-size:12px; font-weight:600; color:var(--text-dim); transition-property:all; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+           box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+  @media (hover: hover) and (pointer: fine){
+    .subtab:hover:not(.active){ color:var(--text);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+ }
+  }
+  .subtab.active{ border-color:var(--rust); background-color:var(--rust);
+    color: var(--op-rust);
+    /* Stond hard op het oude oranje (rgba 196,101,46) — bleef daardoor
+       oranje bij lime of een andere gekozen hoofdkleur, terwijl .tab.active
+       ernaast al wel meekleurde via color-mix. */
+    box-shadow: 0 1px 4px color-mix(in srgb, var(--rust) 30%, transparent);
+}
+  @media (hover: hover) and (pointer: fine){
+    .subtab.active:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px color-mix(in srgb, var(--rust) 40%, transparent);
+    }
+  }
+  .subtab.active{ border-color:var(--rust); color:var(--text);
+}
+
+  /* Gecentreerd, zodat de chips onder de tabbladen uitkomen. Wrappen in plaats
+     van horizontaal scrollen: bij gecentreerde inhoud die overloopt kun je het
+     begin niet meer bereiken met een scrollbalk. */
+  .station-filter{ position:relative; display:flex; flex-wrap:wrap; justify-content:center; gap:0.375rem; padding-top:0.75rem; padding-bottom:0.75rem;
+}
+  .chip{ flex-shrink:0; cursor:pointer; white-space:nowrap; border-radius:3px; border-width:0px; background-color:var(--surface); padding-left:0.75rem; padding-right:0.75rem; padding-top:0.375rem; padding-bottom:0.375rem; font-family:'JetBrains Mono', monospace; font-size:0.75rem; line-height:1rem; font-weight:500; color:var(--text-dim); transition-property:color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+  .chip:hover{ color:var(--text);
+}
+  .chip{
+    box-shadow: var(--bevel-uit);
+    letter-spacing: .03em;
+  }
+  .chip:active{ box-shadow: var(--bevel-in); transform:translate(1px,1px); }
+  .chip.active{ background-color:var(--rust); color: var(--op-rust);
+}
+  .chip .n{ margin-left:0.25rem; opacity:0.7;
+}
+
+  .modal-backdrop{ position:fixed; inset:0px; z-index:50; display:flex; align-items:flex-end; justify-content:center; background-color:rgb(0 0 0 / 0.7); --tw-backdrop-blur:blur(4px); -webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia); backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+  .modal{ max-height:88vh; width:100%; max-width:900px; overflow-y:auto; border-top-left-radius:1rem; border-top-right-radius:1rem; border-width:1px; border-bottom-width:0px; border-color:var(--line); background-color:var(--bg); padding-left:1rem; padding-right:1rem; padding-top:1.25rem; padding-bottom:1.5rem; --tw-shadow:var(--shadow-3); --tw-shadow-colored:var(--shadow-3); box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+  /* Een korte bevestiging hoeft niet over de volle breedte en staat
+     prettiger midden op het scherm dan tegen de onderrand geplakt. */
+  .modal-backdrop:has(.modal-smal){ align-items:center; padding-left:1rem; padding-right:1rem;
+}
+  .modal-smal{ max-width:420px; border-radius:var(--radius-md); border-bottom-width:1px; padding-bottom:1.25rem;
+}
+  /* .modal-backdrop hierboven start onderaan uitgeklapt (een bottom sheet) —
+     goed bedacht voor een smal, met de duim bediend scherm, maar op een breed
+     scherm laat dat driekwart van het venster leeg en moet je blik helemaal
+     naar beneden. Vanaf 700px breed gewoon centreren, met een volle ronding
+     in plaats van alleen bovenaan. modal-smal deed dit al op elke breedte
+     (zie hierboven); dit trekt het door naar de grote .modal ook, maar dan
+     alleen op schermen die er de breedte voor hebben. */
+  @media (min-width:700px){
+    .modal-backdrop{ align-items:center; }
+    .modal{ border-radius:12px; border-bottom-width:1px; max-height:80vh; }
+  }
+  .btn-danger{ background-color:var(--danger); --tw-text-opacity:1; color:rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+  .modal h2{ margin-bottom:0.125rem; font-family:'Inter', sans-serif; font-size:1rem; line-height:1.5rem; font-weight:600; color:var(--text);
+}
+  .modal .sub{ margin-bottom:0.875rem; font-size:0.75rem; line-height:1rem; color:var(--text-dim);
+}
+  .modal-actions{ position:sticky; bottom:0px; margin-top:0.625rem; display:flex; gap:0.5rem; border-top-width:1px; border-color:var(--line); background-color:var(--bg); padding-top:0.75rem;
+}
+  .btn{ flex:1 1 0%; cursor:pointer; border-radius:var(--radius-md); border-width:0px; padding-top:0.75rem; padding-bottom:0.75rem; font-family:'Inter', sans-serif; font-size:13.5px; font-weight:600; transition-property:filter; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+  .btn:hover{ --tw-brightness:brightness(1.1); filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+  .btn-primary{ background-color:var(--rust); color: var(--op-rust);
+}
+  .btn-secondary{ border-width:1px; border-color:var(--line); background-color:var(--surface-2); color:var(--text);
+}
+  .btn-secondary:hover{ background-color:var(--line);
+}
+  /* Kleine regel boven het archief: hoeveel opslag er in gebruik is, met
+     een knop om op te ruimen. Bewust ingetogen — je komt hier voor de lijst,
+     niet voor de knop. */
+  .opslag-regel{ margin-bottom:0.75rem; display:flex; align-items:center; gap:0.75rem; border-bottom-width:1px; border-color:var(--line); padding-bottom:0.625rem; font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--text-dim);
+}
+  .opslag-knop{ margin-left:auto; cursor:pointer; white-space:nowrap; border-radius:3px; border-width:0px; background-color:var(--surface-2); padding-left:0.625rem; padding-right:0.625rem; padding-top:0.25rem; padding-bottom:0.25rem; font-size:11px; color:var(--text);
+    box-shadow: var(--bevel-uit);
+}
+  .opslag-knop:active{ box-shadow: var(--bevel-in); transform:translate(1px,1px); }
+  .review-item{ margin-bottom:0.5rem; border-radius:var(--radius-md); border-width:1px; border-color:var(--line); background-color:var(--surface); padding-left:0.75rem; padding-right:0.75rem; padding-top:0.625rem; padding-bottom:0.625rem;
+}
+
+  /* ---- rit-tegels ----------------------------------------------------
+     Klassenamen blijven ongewijzigd: de swipe- en sleepcode hangt eraan,
+     net als .dragging en .settle. touch-action en user-select zijn geen
+     opsmuk maar voorwaarde voor het slepen. */
+  .card-wrap{ position:relative; margin-bottom:0.375rem; overflow:hidden; border-radius:10px;
+}
+  .card-bg{ position:absolute; inset:0px; display:flex; align-items:center; padding-left:1.25rem; padding-right:1.25rem; font-size:13px; font-weight:600; opacity:0;
+    transition: opacity var(--dur-fast) var(--ease);
+}
+  .card-bg.right{ justify-content:flex-start; background-color:var(--done); --tw-text-opacity:1; color:rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+  /* De tegel is een opstaand vlak: reliëf langs de randen plus een slagschaduw
+     eronder. De twee horen bij elkaar — het reliëf maakt de rand dik, de
+     schaduw tilt het geheel van de achtergrond af. */
+  .card{ position:relative; cursor:grab; --tw-pan-y:pan-y; touch-action:var(--tw-pan-x) var(--tw-pan-y) var(--tw-pinch-zoom); user-select:none; border-radius:10px; border-width:1px; border-color:var(--line); background-color:var(--surface); padding-left:0.625rem; padding-right:0.625rem; padding-top:0.5rem; padding-bottom:0.5rem; opacity:.55;
+    transition: border-color var(--dur) var(--ease),
+                box-shadow  var(--dur) var(--ease),
+                opacity     var(--dur) var(--ease),
+                transform   var(--dur) var(--ease);
+    box-shadow: var(--bevel-uit-diep), 0 3px 10px rgba(0,0,0,0.28);
+}
+  @media (hover: hover) and (pointer: fine){
+    .card:hover:not(.dragging){
+      transform: translateY(-2px);
+      box-shadow: var(--bevel-uit-diep), 0 8px 20px rgba(0,0,0,0.42);
+    }
+  }
+  .card.aangemeerd,.card.klaar-laden{ opacity:1;
+}
+  .card.aangemeerd{ border-width:3px; border-color:var(--done); box-shadow: var(--bevel-uit-diep), 0 0 0 3px var(--done);
+}
+  /* Klaar om te laden: de rand wordt groen, maar blijft een rand. Het reliëf
+     blijft staan zodat de knop niet ineens plat oogt. */
+  .card.klaar-laden .lengte-badge{
+    /* Was ook color:var(--done) — in de lichte modus is groene tekst op het
+       lichte vlak van de badge zelf slecht leesbaar. De rand mag het zeggen;
+       de tekst blijft gewoon de normale, altijd leesbare inktkleur. Rand
+       daarom 2px dikker (was 2px, nu 4px) in plaats van ook nog van kleur te
+       laten wisselen — zo valt hij nog steeds op zonder de tekst te raken. */
+    border-color:var(--done); border-width:4px; color:var(--text);
+    box-shadow: var(--bevel-uit), 0 0 0 1px color-mix(in srgb, var(--done) 45%, transparent);
+  }
+  .card.klaar-laden .lengte-badge:active{ box-shadow: var(--bevel-in); }
+  .card.dragging{ cursor:grabbing; transition:none;
+}
+  .card.settle{ transition: transform var(--dur-slow) var(--ease); }
+
+  /* Dun streepje onder de kop van de tegel — het info-balk-accent uit het
+     referentieontwerp, hier als rustige onderstreping i.p.v. een volle
+     scheidingslijn zodat de bestaande bevel-kaart niet drukker oogt. */
+  /* Kop op één regel: [▲▼] [laadlengte] [——tijdbalk——] [B-knop]. De tijdbalk
+     krijgt de 1fr-kolom, de B-machine een vierkant blok rechts. Named areas
+     zodat de smal-scherm-terugval (media-query onderaan) de balk eenduidig naar
+     een eigen regel kan zetten zonder dat de DOM-volgorde iets verknoeit. */
+  .card-top{ display:grid; align-items:center; gap:0.5rem;
+    grid-template-columns:auto auto 1fr auto;
+    grid-template-areas:"ctrl lengte bar station";
+    border-bottom: 2px solid color-mix(in srgb, var(--rust) 45%, transparent);
+    padding-bottom: 6px; margin-bottom: 5px;
+}
+  .card-top > .order-controls{ grid-area:ctrl; }
+  .card-top > .lengte-col{ grid-area:lengte; justify-self:start; }
+  .card-top > .rit-tijdvak, .card-top > .card-times{ grid-area:bar; width:100%; margin-top:0; }
+  .card-top > .station-col{
+    grid-area:station; justify-self:end; display:flex; flex-direction:column; align-items:flex-end; gap:0.125rem;
+  }
+  /* De "gepland:"/"verdeeld:"-tags op een eigen, volle regel onder de kop. */
+  .card-top-annotaties{
+    grid-column:1 / -1;
+    margin-top:0.25rem;
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:0.75rem;
+    row-gap:0.125rem;
+  }
+  .card-top-annotaties .was-tag{ margin-top:0px; display:inline-block; text-align:left;
+}
+  .card-top-annotaties .verdeeld-tag{ margin:0px; font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--text-dim);
+}
+  /* Iets kleiner dan de losse-regel-weergave, zodat de drie tijden naast de
+     badges passen in de gewone tegelbreedte van de planlijst. */
+  .card-top .rit-tijden{ font-size:9px; }
+  /* Smal scherm (telefoon, één smalle kolom): dan is er naast de badges te
+     weinig breedte voor de tijdbalk en zouden de tijden afknippen. Terug naar
+     [▲▼][laadlengte][B] op regel 1 en de balk eronder op een eigen volle regel. */
+  @media (max-width:700px){
+    .card-top{
+      grid-template-columns:auto 1fr auto;
+      grid-template-areas:
+        "ctrl lengte station"
+        "bar  bar    bar";
+    }
+    .card-top > .rit-tijdvak, .card-top > .card-times{ margin-top:4px; }
+    .card-top .rit-tijden{ font-size:10px; }
+  }
+  .order-controls{ display:flex; flex-direction:column; gap:0.125rem;
+}
+  /* Het vlakje blijft klein — anders wordt de tegelkop onrustig — maar het
+     raakgebied wordt met een onzichtbaar laagje opgerekt tot 24 bij 24. Met
+     een duim mik je niet op twintig bij achttien pixels. */
+  .order-btn{ position:relative; display:flex; height:18px; width:1.25rem; cursor:pointer; align-items:center; justify-content:center; border-radius:2px; border-width:0px; background-color:var(--surface-2); padding:0px; font-size:9px; line-height:1; color:var(--text-dim);
+    box-shadow: var(--bevel-uit);
+}
+  .order-btn::before{
+    content:''; position:absolute; left:50%; top:50%;
+    width:24px; height:24px; transform:translate(-50%,-50%);
+  }
+  .order-btn:not(:disabled):active{ box-shadow: var(--bevel-in); transform:translate(1px,1px); }
+  .order-btn:disabled{ cursor:default; opacity:0.25;
+}
+  .order-btn:not(:disabled):active{ background-color:var(--rust); --tw-text-opacity:1; color:rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+  /* Vierkant blok i.p.v. een brede rechthoek: scheelt breedte zodat de tijdbalk
+     ernaast meer ruimte krijgt, en leest als één herkenbare knop rechts in de
+     kop. min-w == h houdt 'm vierkant bij de gewone "B2"/"B3", en groeit mee
+     voor een enkele langere naam zonder af te knippen. */
+  .station-badge{ display:inline-flex; align-items:center; justify-content:center; overflow:hidden; border-radius:4px; background-color:var(--surface-2); padding-left:0.25rem; padding-right:0.25rem; font-family:'Inter', sans-serif; font-size:16px; font-weight:600; color:var(--text);
+    width:42px; height:42px;
+    border:2px solid var(--line);
+    box-shadow: var(--bevel-uit);
+}
+  .station-badge:active{ box-shadow: var(--bevel-in); transform:translate(1px,1px); }
+  /* width:100% + gecentreerd: een <select> rekt standaard op naar zijn breedste
+     optie ("+ nieuwe…"), wat het blok 90+px breed maakte. Vastgeklemd op de
+     vierkante knop; de keuzelijst zelf toont die lange optie nog gewoon. */
+  .station-badge select{
+    color: inherit;
+    margin:0px;
+    appearance:none;
+    border-width:0px;
+    background-color:transparent;
+    padding:0px;
+    font-family:'Inter', sans-serif;
+    font-size:15px;
+    font-weight:600;
+    width:100%; text-align:center; text-align-last:center;
+  }
+  .station-badge select option{ background-color:var(--surface-2); color:var(--text);
+}
+
+  .lengte-col{ justify-self:center; text-align:center;
+}
+  /* Geen gevuld vlak meer maar een dikke kaderrand: de tekst staat op de
+     tegelachtergrond en leest daardoor rustiger. De twee inset-schaduwen
+     maken de rand reliëf — licht langs de bovenkant, donker langs de onder-
+     kant, precies zoals een ingedrukte rand het licht vangt. */
+  .lengte-badge{ display:inline-flex; cursor:pointer; user-select:none; align-items:center; justify-content:center; white-space:nowrap; border-radius:3px; background-color:var(--surface-2); padding-left:0.625rem; padding-right:0.625rem; padding-top:0.25rem; padding-bottom:0.25rem; font-family:'JetBrains Mono', monospace; font-size:15px; font-weight:400; color:var(--text);
+    border:2px solid var(--line);
+    box-shadow: var(--bevel-uit);
+    transition: border-color var(--dur-fast) var(--ease),
+                color var(--dur-fast) var(--ease);
+    touch-action:none;   /* anders kaapt de pagina het ingedrukt houden */
+}
+  @media (hover: hover) and (pointer: fine){
+    .lengte-badge:hover{ border-color:var(--text-dim); }
+  }
+  /* Ingedrukt draait het licht om en zakt de knop een pixel weg. Samen is dat
+     het verschil tussen "er verandert een kleur" en "ik druk iets in". */
+  .lengte-badge:active{
+    box-shadow: var(--bevel-in);
+    transform:translate(1px,1px);
+  }
+  .lengte-huidig{ margin-left:auto; font-family:'JetBrains Mono', monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.025em; color:var(--text-dim);
+}
+
+  /* Kleurstalen om de hoofdkleur te kiezen. De gekozen krijgt een ring in de
+     tekstkleur, zodat hij in beide modi opvalt tegen zijn eigen kleur. */
+  .accent-knop{
+    width:30px;height:30px;border-radius:50%;cursor:pointer;
+    border:1px solid var(--line);padding:0;
+    transition:transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+  }
+  @media (hover: hover) and (pointer: fine){
+    .accent-knop:hover{ transform:translateY(-2px); box-shadow:var(--shadow-2); }
+  }
+  .accent-knop.gekozen{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px var(--text); }
+  .accent-knop:focus-visible{ outline:2px solid var(--text); outline-offset:3px; }
+
+  /* Kleurvlakje naast een uiterlijk-schuif, zie verversPreviews(). Toont wat de
+     schuif doet zonder dat je eerst van thema hoeft te wisselen om het te zien. */
+  .instelling-preview{
+    display:inline-block; width:34px; height:22px; flex:none;
+    border-radius:4px; border:1px solid var(--line);
+  }
+
+  /* Een boot die volgens VH/HGK niet klopt: rood, met de juiste naam er klein
+     achter. VH en HGK zijn leidend boven de EECV-lijst. */
+  /* De juiste boot is de hoofdinformatie en staat dus groot; de afgekeurde
+     waarde uit de EECV-lijst blijft er klein en rood naast staan zodat je ziet
+     wat er in de bronlijst stond. */
+  .boot-juist{ color: var(--done); }
+  .boot-fout{ margin-left:0.25rem; border-radius:var(--radius-sm); padding-left:0.25rem; padding-right:0.25rem; vertical-align:middle; font-family:'JetBrains Mono', monospace; font-size:9px; font-weight:400;
+    color: var(--danger);
+    background: color-mix(in srgb, var(--danger) 14%, transparent);
+}
+
+  .was-tag{ margin-top:0.25rem; display:block; white-space:nowrap; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--danger);
+}
+  .was-tag.left{ text-align:left;
+}
+  .card-title{ font-family:'Inter', sans-serif; font-size:15px; font-weight:600;
+}
+  .card-berth{ margin-top:0.125rem; font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--text-dim);
+}
+  /* De vier tijden stonden als eigen volle-breedte regel onder de kop van de
+     tegel (B2/B3/B4-knop + laadlengte) — dat kostte een hele regel tegel-
+     hoogte. Ze staan nu naast de B2/B3/B4-knop, in dezelfde rij
+     (.station-tijden-rij hieronder), dus niet meer eronder maar ernaast. */
+  .station-tijden-rij{ display:flex; align-items:center; gap:0.75rem;
+}
+  .card-times{ display:grid; font-family:'JetBrains Mono', monospace; font-size:10px; line-height:1.25; color:var(--text-dim);
+    grid-template-columns:1fr 1fr; gap:0 8px;
+    /* Terugvalweergave als er geen tijdschaal is (geen plantijden, of maar één
+       rit in beeld). Zit nu in de tijdbalk-kolom van de kop (grid-area:bar),
+       net als de echte balk — niet meer op een eigen volle regel. */
+    margin-top:0;
+}
+  .card-times b{ font-weight:500; color:var(--text);
+}
+  .card-times b.time-bad{ font-weight:700; color:var(--danger);
+}
+
+  .card-rows{ margin-top:0.5rem; border-top-width:1px; border-color:var(--line); padding-top:0.375rem;
+}
+  .card-row{ display:grid; align-items:center; gap:0.375rem; border-bottom-width:1px; padding-top:0.25rem; padding-bottom:0.25rem; font-size:13px;
+    grid-template-columns:minmax(0,1fr) auto auto auto;
+    border-bottom-color:rgba(255,255,255,.05);
+}
+  .card-row:last-child{ border-bottom-width:0px;
+}
+  /* Niet meer afbreken naar een tweede regel: de scheepsnaam en de baknaam
+     blijven volledig staan (flex:none), en als de tegel te smal wordt is het de
+     ertssoort die inkort met een ellipsis (zie .erts). overflow-hidden vangt het
+     uiterste geval op waarin zelfs de naam niet meer past — dan clipt hij netjes
+     binnen de kolom in plaats van over het tonnage heen te lopen. */
+  .row-left{ display:flex; min-width:0px; flex-wrap:nowrap; align-items:baseline; gap:0.375rem; overflow:hidden;
+}
+  .move-btn{ position:relative; display:inline-flex; height:19px; width:19px; cursor:pointer; align-items:center; justify-content:center; align-self:center; border-radius:2px; border-width:0px; background-color:var(--surface-2); padding:0px; font-size:11px; line-height:1; color:var(--text-dim);
+    box-shadow: var(--bevel-uit);
+}
+  /* Onzichtbaar vergroot raakgebied (30×30), net als bij de ▲▼-knoppen: het
+     vlakje blijft klein maar je mikt er met een vinger makkelijk op. */
+  .move-btn::before{
+    content:''; position:absolute; left:50%; top:50%;
+    width:30px; height:30px; transform:translate(-50%,-50%);
+  }
+  .move-btn:active{ background-color:var(--rust); --tw-text-opacity:1; color:rgb(255 255 255 / var(--tw-text-opacity, 1)); box-shadow: var(--bevel-in); transform:translate(1px,1px);
+}
+
+  /* Klein rood kruisje vlak achter de baknaam — was een aparte tekstregel
+     ("niet gevonden in VH/HGK-planning") onder de hele rij, nu compacter. */
+  .bak-mismatch{ display:inline-flex; cursor:pointer; align-items:center; justify-content:center; border-width:0px; background-color:transparent; padding:0px; font-size:13px; font-weight:700; line-height:1; color:var(--danger);
+    width:16px; height:16px;
+}
+  @media (hover: hover) and (pointer: fine){
+    .bak-mismatch:hover{ background: color-mix(in srgb, var(--danger) 15%, transparent); border-radius:3px; }
+  }
+  /* min-width, niet width: dit stuwt de baknaam ernaast (.bak-nummer) op de
+     meeste regels naar dezelfde X-positie — een echt lange combinatie
+     (bijv. "onbekend → Rijnstroom") mag nog steeds volledig blijven staan,
+     die regel schuift dan gewoon iets verder op in plaats van af te knippen.
+     144px dekt de meerderheid (de gewone "XX N → XX N"-vorm is 11-13 tekens).
+     Was 16ch: de ch-eenheid meet de breedte van het cijfer "0" in het font dat
+     daadwerkelijk getekend wordt. Laadt JetBrains Mono niet op tijd (of valt
+     terug op het systeemlettertype, breder dan JetBrains Mono's smalle 0,6em
+     per teken), dan werd 16ch op de tablet een stuk breder dan op de pc, en
+     stond de baknaam zichtbaar verder van de scheepsnaam af. Vast in pixels
+     (13 tekens × 13px × 0,6, dezelfde verhouding als elders in de haven-
+     tekening) maakt de afstand overal gelijk, met of zonder dat lettertype.
+     Kleiner gezet (13px i.p.v. 15) met een strak negatief letterspatie: de
+     aankomst→vertrek-naam pakt zo minder breedte, waardoor de ertssoort naast
+     de baknaam op dezelfde regel past in plaats van eronder af te breken. De
+     min-width is navenant kleiner, zodat de baknaam dichter op de naam staat. */
+  .ship-name{ display:inline-block; font-family:'JetBrains Mono', monospace; font-size:13px; font-weight:700; color:var(--text); letter-spacing:-0.3px; min-width:104px; flex:none;
+}
+  .ship-name .onzeker{ margin-left:1px; vertical-align:super; font-size:11px; font-weight:700; color:var(--danger);
+}
+  /* Zelflader: geen naam maar een label — gedempt en klein, niet in teal. */
+  .ship-name.zelflader{ font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.025em; color:var(--text-dim); min-width:0;
+}
+  /* Ontbrekende scheepsnaam: duidelijk anders dan een échte naam (niet vet,
+     niet teal, cursief), zodat "nog niet ingevuld" niet als data leest. */
+  .onbekend-veld{ font-family:'Inter', sans-serif; font-weight:400; color:var(--text-dim); font-style: italic;
+}
+  .bak-nummer{ font-family:'JetBrains Mono', monospace; font-size:17px; font-weight:700; letter-spacing:.2px; color:var(--text); flex:none;
+}
+  /* Een bak die samen met andere de berg op gaat krijgt dezelfde omlijning
+     als op de kade: zelfde vorm, zelfde kleur, zodat je de lijst en de haven
+     in één taal leest. Alleen bij een set die over meerdere tegels ligt —
+     ligt hij helemaal op deze tegel, dan valt er niets te zoeken. */
+  /* Duidelijker dan een haarfijne 1px-rand: een 2px-rand in de setkleur plus een
+     lichte vulling in diezelfde kleur, zodat de set-ring op een oogopslag opvalt
+     zonder de baknaam (inkt) onleesbaar te maken. De border-color zelf zet
+     renderCard inline mee; --setkleur erft van de rij voor de vulling. */
+  .bak-nummer.in-set{ display:inline-flex; align-items:center; border-radius:3px; border-width:2px; padding-left:0.5rem; padding-right:0.5rem; padding-top:0.125rem; padding-bottom:0.125rem;
+    background: color-mix(in srgb, var(--setkleur) 16%, var(--surface2));
+    box-shadow: var(--bevel-uit);
+}
+  /* De beugel ernaast: bakken van dezelfde set die hier onder elkaar staan
+     krijgen één doorlopend streepje, met een haakje aan begin en eind. Iets
+     dikker (4px) dan voorheen zodat de set-samenhang beter leest. */
+  .card-row.set-begin, .card-row.set-midden,
+  .card-row.set-eind, .card-row.set-alleen{
+    position:relative; padding-left:12px;
+    box-shadow: inset 4px 0 0 -0px var(--setkleur);
+  }
+  .card-row.set-begin::before, .card-row.set-alleen::before,
+  .card-row.set-eind::after,   .card-row.set-alleen::after{
+    content:''; position:absolute; left:0; width:10px; height:4px;
+    background:var(--setkleur); border-radius:2px;
+  }
+  .card-row.set-begin::before, .card-row.set-alleen::before{ top:0; }
+  .card-row.set-eind::after,   .card-row.set-alleen::after{ bottom:0; }
+  /* De ertssoort krimpt als enige mee als de tegel smal wordt: één regel, en
+     te lang wordt afgekapt met een ellipsis (…). Een tik klapt de volledige
+     naam uit (.erts-open) — handig op de tablet, waar een title-tooltip niet
+     verschijnt. flex:0 1 auto + min-width:0 laten hem krimpen tot onder zijn
+     eigen tekstbreedte, anders werkt text-overflow niet. */
+  .erts{ cursor:pointer; overflow:hidden; white-space:nowrap; font-size:11px; font-weight:400; color:var(--text-dim);
+    text-overflow:ellipsis; min-width:0; flex:0 1 auto;
+}
+  .erts.erts-open{ overflow:visible; white-space:normal; text-overflow:clip; }
+  .dummy-pending{ display:inline-flex; cursor:pointer; align-items:center; border-radius:3px; border-width:1px; border-color:var(--rust); background-color:var(--surface-2); padding-left:0.625rem; padding-right:0.625rem; padding-top:0.25rem; padding-bottom:0.25rem; font-family:'JetBrains Mono', monospace; font-size:17px; font-weight:700; color:var(--rust);
+    box-shadow: var(--bevel-uit);
+}
+  .dummy-edit-btn{ cursor:pointer; border-width:0px; background-color:transparent; padding-left:0.25rem; vertical-align:middle; font-size:11px; color:var(--text-dim);
+}
+  .card-row .tonnage{ white-space:nowrap; text-align:right; font-family:'JetBrains Mono', monospace; color:var(--rust);
+}
+  .card-row .tonnage-bad{ font-weight:700; color:var(--danger);
+}
+  .card-row.status-niet-aanwezig{ opacity:.45;
+}
+  .card-row.status-repareren{ opacity:0.7;
+}
+  .status-tag{ white-space:nowrap; font-size:11px; font-weight:700; color:var(--danger);
+}
+  /* Tekst alleen viel te makkelijk weg tussen de rest van de regel — op
+     verzoek nu een gevuld badge met tandwiel, dezelfde opzet als de andere
+     statuskleurtjes in de app (rust = "let op, actie nodig"). */
+  .status-tag.repareren{ display:inline-flex; align-items:center; gap:0.25rem; border-radius:4px; background-color:var(--rust); padding-left:0.375rem; padding-right:0.375rem; padding-top:0.125rem; padding-bottom:0.125rem; font-weight:400; --tw-text-opacity:1; color:rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+  .bak-status-btn{ margin:0px; cursor:pointer; border-width:0px; background-color:transparent; padding:0px;
+}
+  .card-row .kunde{ white-space:nowrap; text-align:right; font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--text-dim);
+}
+
+  /* Keuzeregels in de vensters. Het waren div's met een klikafhandelaar, en dat
+     liep dood: het venster heeft een focusval, dus met het toetsenbord kwam je
+     alleen nog bij Annuleren — kiezen kon niet. Nu knoppen. w-full omdat een
+     knop krimpt tot zijn tekst waar een div de hele breedte pakte, text-left en
+     font-family omdat een knop anders zijn eigen uitlijning en letter meebrengt.
+     De inline border-left van de kleurstreep wint gewoon van border-0. */
+  .group-pick-item{ margin-bottom:0.375rem; display:flex; width:100%; cursor:pointer; align-items:center; gap:0.625rem; border-radius:var(--radius-sm); border-width:0px; background-color:var(--surface); padding-left:0.75rem; padding-right:0.75rem; padding-top:0.625rem; padding-bottom:0.625rem; text-align:left; font-size:13px; transition-property:color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); transition-duration:150ms;
+}
+  .group-pick-item:hover{ background-color:var(--surface-2);
+}
+  .group-pick-item{
+    font-family:inherit;
+    appearance:none;-webkit-appearance:none;
+  }
+  .group-pick-swatch{ height:1rem; width:1rem; flex-shrink:0; border-radius:9999px;
+}
+  .card-footer{ margin-top:0.5rem;
+}
+  /* Zonder notitie geen vol invoerveld maar een klein, rustig knopje; het veld
+     verschijnt pas bij een tik (zie renderCard). Scheelt een vaste, bijna
+     altijd lege regel hoogte op elke tegel. */
+  .card-footer.leeg{ margin-top:0.375rem;
+}
+  .notitie-toevoegen{ display:inline-flex; cursor:pointer; align-items:center; border-radius:var(--radius-sm); border-width:0px; background-color:transparent; padding-left:0.25rem; padding-right:0.25rem; padding-top:0.125rem; padding-bottom:0.125rem; font-family:'Inter', sans-serif; font-size:11px; color:var(--text-dim);
+}
+  @media (hover: hover) and (pointer: fine){
+    .notitie-toevoegen:hover{ color:var(--text); background: var(--surface2);
+ }
+  }
+  .card-note textarea{ height:22px; min-height:22px; width:100%; resize:vertical; border-radius:var(--radius-sm); border-width:1px; border-color:var(--line); background-color:var(--surface-2); padding-left:0.375rem; padding-right:0.375rem; padding-top:0.25rem; padding-bottom:0.25rem; font-family:'Inter', sans-serif; font-size:11px; color:var(--text);
+}
+  .card-note textarea::placeholder{ color:var(--text-dim);
+}
+  .vh-set-footer{ margin-top:0.5rem; text-align:center; font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:.2px; color:var(--text); line-height:1.4;
+}
+
+  /* ---- haven: alleen de HTML eromheen ---------------------------------
+     De tekening zelf blijft gewone CSS; fill en stroke laten zich daar
+     korter uitdrukken dan met utility-klassen. */
+  .haven-canvas{ overflow:auto; border-radius:var(--radius-md); border-width:1px; border-color:var(--line); background-color:var(--surface); padding:0.5rem;
+    -webkit-overflow-scrolling:touch;
+}
+  /* Tabjes onderaan de haven; het paneel schuift eroverheen. De haven blijft
+     eronder staan, zodat je kunt zien waar je een set naartoe sleept. */
+  .haven-canvas{position:relative;}
+  /* De knoppen worden per stuk geplaatst op hun eigen plek in de haven; de
+     balk eromheen is alleen de laag waarin ze staan. */
+  .haven-plaatstabs{position:absolute;inset:0;pointer-events:none;z-index:2;}
+  /* De twee knoppen zijn gemaakt als de greep van het menu zelf: een lip die
+     aan de rand van de haven vastzit, vierkant tegen die rand aan en rond aan
+     de binnenkant, met ribbels. Ze staan dan ook waar hun menu vandaan komt —
+     de lege links tegen de zijkant, de volle rechtsonder tegen de onderrand.
+     Zo zie je aan de knop al welke kant het menu op schuift. */
+  /* Ruim bemeten met opzet: dit gaat op een scherm van twaalf inch met een
+     duim, niet met een muis. Een lipje van een paar millimeter mis je. */
+  .haven-plaatstab{
+    position:absolute; pointer-events:auto; padding:0; border:0; display:flex; cursor:pointer; align-items:center; justify-content:center; gap:0.75rem; background-color:var(--surface-2); font-size:17px; font-weight:500; color:var(--text);
+    /* Helemaal rond, en dezelfde beweging als de tabbladen bovenin: bij
+       zweven komt hij naar je toe, de kant op waar zijn menu opengaat. */
+    border-radius:999px;
+    box-shadow: var(--bevel-uit-diep), 0 2px 8px rgba(0,0,0,.2);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .haven-plaatstab b{ font-family:'JetBrains Mono', monospace; font-size:20px; color:var(--text);
+}
+  .haven-plaatstab:active{ box-shadow: var(--bevel-in); }
+  .haven-plaatstab.open{ background-color:var(--rust); color: var(--op-rust);
+}
+  .haven-plaatstab.open b{ color: var(--op-rust); }
+  /* Tijdens het slepen erboven: zelfde groen als een zone die oplicht. */
+  .haven-plaatstab.doelwit{ background:var(--done); color:#fff; }
+  .haven-plaatstab.doelwit b{ color:#fff; }
+  .haven-plaatstab .ribbel{
+    width:3px; height:20px; border-radius:2px; flex:none;
+    background:color-mix(in srgb, var(--ink) 70%, transparent);
+  }
+  .haven-plaatstab .punt{ font-size:24px; line-height:1; }
+
+  /* Rechtsonder tegen de onderrand: dat menu komt van onderen omhoog. De lege
+     plaats had hier ook een tabje (links tegen de zijkant, staand schrift) —
+     vervallen sinds de lege plaats een vaste kolom is (havenTekenLegeKolom)
+     in plaats van een knop + in/uitschuivend paneel. */
+  .haven-plaatstab[data-plaats="vol"]{
+    bottom:6px; height:62px; padding:0 26px;
+  }
+  .haven-plaatstab[data-plaats="vol"] .punt{ transform:rotate(-90deg); }
+  @media (hover: hover) and (pointer: fine){
+    .haven-plaatstab[data-plaats="vol"]:hover{
+      transform: translateY(-4px);
+      box-shadow: var(--bevel-uit-diep), 0 6px 16px rgba(0,0,0,.35);
+    }
+  }
+
+  .haven-plaatspaneel{
+    position:absolute; top:8px; bottom:8px; z-index:3;
+    background: color-mix(in srgb, var(--bg) 94%, transparent);
+    border-radius:8px; box-shadow:var(--bevel-uit-diep), var(--shadow-3);
+    display:flex; flex-direction:column;
+    /* Zichtbaar in plaats van afgesneden: de greep steekt half over de rand
+       heen, zodat hij die rand echt lijkt vast te houden. Het afsnijden
+       gebeurt nu in de inhoud zelf, die toch al zijn eigen scroll heeft. */
+    overflow:visible;
+  }
+  .haven-plaatsinhoud{ border-radius:0 0 8px 8px; }
+  /* display:flex hierboven wint van het hidden-attribuut, waardoor het paneel
+     altijd zichtbaar bleef en als waas over de haven lag. */
+  /* Begint rechts van zijn eigen knop, zodat die zichtbaar blijft als het
+     menu openstaat — je ziet dan meteen waar het vandaan komt. */
+  .haven-plaatspaneel.vanuit-west{ left:86px; right:auto; width:calc(50% - 12px); }
+  /* De volle plaats komt van onderen omhoog, rechtsonder, waar zijn knop ook
+     zit. Stond eerst op een vaste height:52% — de helft van wat de lege
+     plaats aan hoogte kreeg (top:8px;bottom:8px, hierboven). Nu net als de
+     lege plaats top-tot-onder vastgezet, alleen dan tot net boven zijn eigen
+     knop in plaats van tot de canvasrand — zo krijgt hij evenveel ruimte. */
+  .haven-plaatspaneel.vanuit-onder{
+    right:8px; left:auto; top:8px;
+    /* Net boven zijn eigen knop, zodat die zichtbaar blijft en als voet van
+       het menu leest in plaats van er half onder te verdwijnen. */
+    bottom:64px;
+    width:calc(50% - 12px);
+  }
+  .haven-plaatspaneel[hidden]{ display:none; }
+  /* Dichtschuiven naar de kant waar het paneel vandaan komt. Zonder die
+     beweging lijkt het paneel weg te knipperen en weet je even niet of je
+     iets kwijt bent; nu zie je waar het heen gaat en waar je het terugvindt. */
+  .haven-plaatspaneel{ transition:transform .34s ease-out, opacity .34s ease-out; }
+  .haven-plaatspaneel.schuift-dicht{ opacity:0; }
+  /* Tijdens het schuiven staat het paneel even buiten de tekening. Zonder
+     dit groeit de haven mee en verschijnt er onderin een schuifbalk die er
+     na afloop weer af gaat — een witte streep die over het beeld flitst. */
+  .haven-canvas.schuift{ overflow:hidden; }
+  .haven-plaatspaneel.vanuit-west.schuift-dicht{ transform:translateX(calc(-100% - 16px)); }
+  .haven-plaatspaneel.vanuit-onder.schuift-dicht{ transform:translateY(calc(100% + 72px)); }
+  .haven-plaatspaneel.doelwit{ box-shadow:var(--bevel-uit-diep), 0 0 0 2px var(--done); }
+  .haven-plaatskop{ display:flex; align-items:center; gap:0.75rem; border-bottom-width:1px; border-color:var(--line); padding-left:0.75rem; padding-right:0.75rem; padding-top:0.5rem; padding-bottom:0.5rem; font-family:'Inter', sans-serif; font-size:13px; font-weight:600; color:var(--text);
+}
+  .haven-plaatsvrij{ margin-left:auto; font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:400; color:var(--text-dim);
+}
+  /* De greep waarmee je het menu aan de kant schuift. Hij zit halverwege de
+     binnenrand van het paneel — dat is ongeveer het midden van het scherm —
+     en hoort bij die rand: het paneel houdt hem vast en je duwt hem opzij.
+     Daarom is de buitenkant vierkant, tegen de rand aan, en de binnenkant
+     rond. Groot genoeg voor een duim, want dit is de knop die je zoekt zodra
+     het menu een kade afdekt waar je iets neer wilt leggen. */
+  .haven-paneelgreep{
+    position:absolute; top:50%; transform:translateY(-50%);
+    width:30px; height:132px; padding:0; border:0; z-index:4; display:flex; cursor:pointer; flex-direction:column; align-items:center; justify-content:center; gap:0.375rem; background-color:var(--surface-2); color:var(--text);
+    box-shadow: var(--bevel-uit-diep);
+  }
+  .haven-paneelgreep.op-rechts{ right:-16px; border-radius:0 9px 9px 0; }
+  .haven-paneelgreep.op-links { left:-16px;  border-radius:9px 0 0 9px; }
+  /* Boven op het paneel dat van onderen komt: liggend, in het midden. */
+  .haven-paneelgreep.op-boven{
+    top:-16px; left:50%; bottom:auto; transform:translateX(-50%);
+    width:132px; height:30px; flex-direction:row; border-radius:9px 9px 0 0;
+  }
+  .haven-paneelgreep.op-boven .ribbel{ width:2px; height:13px; }
+  .haven-paneelgreep:active{ box-shadow: var(--bevel-in); }
+  .haven-paneelgreep .punt{ font-size:22px; line-height:1; color:var(--ink); }
+  /* De punt wijst altijd de kant op waar het paneel heen gaat. */
+  .haven-paneelgreep.naar-onder .punt{ transform:rotate(90deg); }
+  /* Streepjes: het leest als iets om beet te pakken, niet als een vlak. */
+  .haven-paneelgreep .ribbel{
+    width:13px; height:2px; border-radius:1px;
+    background:color-mix(in srgb, var(--ink) 70%, transparent);
+  }
+  /* Ruimte vrijhouden, anders schuiven de tegels onder de greep door. */
+  .haven-plaatspaneel.vanuit-west .haven-plaatsinhoud{ padding-right:26px; }
+  .haven-plaatspaneel.vanuit-onder .haven-plaatsinhoud{ padding-left:26px; }
+  .haven-plaatsinhoud{
+    /* Blijft het scrollende kijkvenster (flex-1: vult de rest van het
+       paneel). De echte hoogte — en de positionering van elke tegel — zit
+       nu in .haven-plaatsraster erbinnen, zie hieronder. */
+    flex:1 1 0%;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:0.625rem;
+  }
+  /* Het canvas waarop elke tegel zichzelf plaatst (position:absolute, top in
+     px — zie havenPlaatsTegel). De echte hoogte per rij komt pas ná het
+     tekenen tot stand: havenZetPlaatsPaneel meet elke tegel op en pakt de
+     rijen dicht in elkaar (PANEEL_TEGEL_GAP_PX ertussen), met een kleinere,
+     nog altijd aantikbare band voor een rij zonder tegel (PANEEL_LEGE_RIJ_PX)
+     — zo blijft elke rij een geldige plek om naartoe te slepen, ook de rijen
+     die nog niets bevatten. */
+  .haven-plaatsraster{ position:relative; width:100%; }
+  /* De tegel die je vasthebt volgt de aanwijzer verticaal 1-op-1 (top wordt
+     tijdens het slepen live bijgewerkt, zie havenKoppelPaneelSlepen) — geen
+     ghost-plek meer die andere tegels alvast opzij schuift: dat was precies
+     het "automatisch aansluiten" dat niet meer moet. Wat overblijft is puur
+     visuele feedback dat je aan het verslepen bent. */
+  .plaats-set.wordt-verschoven{
+    opacity:.85; box-shadow:none; z-index:5;
+    outline:2px dashed var(--done); outline-offset:-2px;
+  }
+  /* Het vertrekvak onderin de volle bakkenplaats. */
+  .haven-vertrekvak{ margin-left:0.625rem; margin-right:0.625rem; margin-bottom:0.625rem; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.125rem; border-radius:var(--radius-md); padding-top:0.5rem; padding-bottom:0.5rem; font-size:13px; font-weight:500; color:var(--text-dim);
+    border:2px dashed var(--line); flex:none;
+}
+  .haven-vertrekvak small{ font-size:11px; font-weight:400; opacity:0.8;
+}
+  .haven-vertrekvak.doelwit{
+    border-color:var(--done); color:var(--done);
+    background:color-mix(in srgb, var(--done) 12%, transparent);
+  }
+  /* Alle tegels beginnen links, op allebei de plaatsen. De volle plaats lijnde
+     ze eerst rechts uit (zoals ze tegen de oostkant afgemeerd liggen), elk met
+     een eigen verstek-marge erbij. Met tegels van verschillende breedte gaf
+     dat een rafelrand waarin niets meer onder elkaar stond. Dit paneel is een
+     lijst om te lezen; waar een set écht ligt lees je in de haventekening. */
+  .plaats-set{ left:0; }
+  /* En de duwbootnaam krijgt op de volle plaats een vaste kolombreedte, zodat
+     niet alleen de tegels maar ook de bakjes erin onder elkaar uitkomen —
+     ongeacht of het een set van twee of van zes is. */
+  .vol-set .plaats-schip{ flex:0 0 9.5rem; }
+  /* Bakken links, het aankomstschip erachter. Zo staan de bakken van alle
+     tegels onder elkaar uitgelijnd en lees je de plaats als een lijst. */
+  .plaats-set{ display:flex; align-items:center; gap:0.75rem; position:absolute;
+}
+  /* De tegel is zo breed als zijn inhoud, niet zo breed als het paneel. Een
+     set van twee hoort er ook als een set van twee uit te zien. */
+  .plaats-set{ width:max-content; max-width:100%; }
+  .plaats-bakken{ flex-shrink:0;
+}
+  .plaats-bakken .haven-wachtrij-rij{ margin-bottom:0.25rem;
+}
+  .plaats-bakken .haven-wachtrij-rij:last-child{ margin-bottom:0px;
+}
+  .plaats-schip{ min-width:0px;
+}
+  .plaats-schip .haven-wachtrij-tijd{ margin-bottom:0px;
+}
+
+  /* De duwboot-tabjes stonden hier eerst ook onder elke tegel in de lege
+     kolom. Op verzoek weggehaald: die kolom laat alleen de baknamen met hun
+     kleur en het aankomstschip zien; de tabjes horen bij de tegels in de
+     haventekening (.haven-boottab). */
+  /* Zelfde bakken-links-schip-erachter-indeling als hierboven, maar dan voor
+     Onderweg: die tegel is niet position:absolute (geen vaste rij nodig,
+     gewoon een lijst), dus geen eigen flex op .haven-wachtrij-set zelf —
+     alleen déze twee kolommen (tijd/EECV-regel blijft erboven staan). Zo
+     staat de scheepsnaam achter de bakken, wat meteen laat zien dat dat de
+     achterkant van de eenheid is en de BB/midden/SB-volgorde ernaast dus
+     klopt met hoe de bakken echt liggen. */
+  .wachtrij-rij-schip{ display:flex; align-items:center; gap:0.75rem;
+}
+  /* Een los bakje is apart op te pakken; de tegel blijft dan gewoon liggen. */
+  .haven-wachtrij-bak.los{ cursor:grab; touch-action:none; }
+  .haven-wachtrij-bak.los:active{ cursor:grabbing; }
+
+  /* Schaduwvakken: alleen zichtbaar zolang er iets gekozen staat (in
+     Onderweg, de tekening of het paneel — havenVerversSchaduw zet de klasse
+     op de kolom, zie havenToonGekozenSets). Zelfde visuele taal als een
+     ontbrekende bak (.haven-wachtrij-bak.ontbreekt): gestippeld, geen vulling. */
+  .plaats-schaduw{
+    position:absolute; left:0; width:100%; box-sizing:border-box;
+    border:2px dashed var(--rust); border-radius:6px;
+    background:color-mix(in srgb, var(--rust) 8%, transparent);
+    cursor:pointer; display:none;
+  }
+  .haven-lege-kolom.toont-schaduw .plaats-schaduw{ display:block; }
+  /* De volle bakkenplaats toont de ghost-rijen altijd (in rust), zodat je ziet
+     op welke rij een set terecht kan — geen scroll, alleen uit-/inklappen. */
+  .haven-vol-vlak .plaats-schaduw{ display:block; }
+  /* Geen scroll; onderaan uitgelijnd via een berekende margin-top op het raster
+     (zie havenPositioneerVolVlak) — in rust zie je de ónderste rijen, de
+     bovenste vallen weg tot je uitklapt. */
+  .haven-vol-vlak .haven-plaatsinhoud{ overflow:hidden; }
+  /* De vertrek-hoek: een compacte strook onderaan (flow-kind, claimt dus zijn
+     eigen hoogte — geen overlap met de rijen), met de "Vertrokken"-box in de
+     rechterhoek. Sleep een set hierheen → de haven uit. */
+  .haven-vol-vlak .haven-vertrekvak{
+    margin:0; flex:none; height:34px; border:0; background:transparent;
+    flex-direction:row; justify-content:flex-end; align-items:center;
+    padding:0 6px 4px 0;
+  }
+  .haven-vol-vlak .haven-vertrekvak small{ display:none; }
+  .haven-vol-vlak .haven-vertrekvak > span{
+    border:2px dashed var(--line); border-radius:6px; padding:3px 10px;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+  }
+  .haven-vol-vlak .haven-vertrekvak.doelwit{ background:transparent; color:var(--dim); }
+  .haven-vol-vlak .haven-vertrekvak.doelwit > span{
+    border-color:var(--done); color:var(--done);
+    background:color-mix(in srgb, var(--done) 12%, transparent);
+  }
+  /* Verstek: elke tweede rij een halve baklengte (½ × 58px) naar het oosten,
+     zodat sets elkaar half overlappen zoals ze in het echt in verstek liggen —
+     puur weergave, de set blijft als geheel bij elkaar. */
+  .haven-vol-vlak .plaats-set.verstek{ margin-left:29px; }
+  @media (hover: hover) and (pointer: fine){
+    .plaats-schaduw:hover{ background:color-mix(in srgb, var(--rust) 18%, transparent); }
+  }
+
+  /* Tik-om-te-vergroten: de tegel zelf blijft hetzelfde kind van dezelfde
+     container (position:fixed, niet verplaatst in de DOM) zodat alle
+     bestaande sleep-/kies-afhandelaars — die via .closest('.haven-wachtrij-set')
+     werken — gewoon op de vergrote versie blijven werken. Percentage komt uit
+     --haven-tegel-zoom, per gebruiker instelbaar (Gebruikers-tabblad). */
+  .plaats-set.gezoomd,
+  .haven-wachtrij-set.gezoomd{
+    /* !important op top: elke tegel krijgt al een inline top (de rijen-
+       pak-stap in havenVulPlaatsContainer) die anders voorrang zou houden
+       boven deze klasse. */
+    position:fixed !important; top:50% !important; left:50%; right:auto;
+    transform:translate(-50%,-50%) scale(var(--haven-tegel-zoom, 2));
+    z-index:100; margin:0 !important;
+    box-shadow: var(--shadow-3);
+  }
+  /* De vergrote tegel staat midden op het scherm, precies over de haven heen.
+     Hij mag de kade daaronder dus niet afschermen: tikken gaat door de tegel
+     heen naar de oplichtende laadlengte eronder. Alleen wat je ín de tegel
+     zelf kunt aanraken — de losse bakjes en de duwboot-tabjes — vangt de tik
+     nog op. */
+  .plaats-set.gezoomd,
+  .haven-wachtrij-set.gezoomd{ pointer-events:none; }
+  .plaats-set.gezoomd .haven-wachtrij-bak.los,
+  .haven-wachtrij-set.gezoomd .haven-wachtrij-bak.los{ pointer-events:auto; }
+  .haven-tegel-zoom-scrim{
+    position:fixed; inset:0; z-index:99;
+    background:rgba(0,0,0,.55);
+  }
+
+  .haven-overloop{ margin-bottom:0.625rem; border-radius:var(--radius-sm); border-width:1px; border-color:var(--danger); padding-left:0.625rem; padding-right:0.625rem; padding-top:0.5rem; padding-bottom:0.5rem; font-family:'JetBrains Mono', monospace; font-size:11px; line-height:1.5; color:var(--danger);
+}
+
+  #app.haven-breed{ max-width:none;
+}
+  #app.haven-breed main{ padding-left:1.25rem; padding-right:1.25rem;
+}
+
+  /* Haven links, onderweg-kolom rechts met een eigen scrollbalk. Zo blijft
+     de tekening laag genoeg om in beeld te passen en staan de aankomende
+     sets naast de plek waar ze heen moeten. */
+  .haven-kolommen{ display:flex; align-items:flex-start; gap:0.75rem;
+}
+  .haven-kolommen .haven-canvas{ min-width:0px; flex:1 1 0%;
+}
+  /* De lege bakkenplaats als vaste, altijd zichtbare kolom — links op het
+     scherm, vóór de tekening, net als Onderweg rechts ervan altijd zichtbaar
+     is. Anders dan .haven-wachtrij (één plat scrollend vlak) hergebruikt deze
+     kolom de bestaande .haven-plaatskop/.haven-plaatsinhoud-structuur van het
+     bakkenplaats-paneel (havenVulPlaatsContainer) — vandaar flex-column met
+     overflow:hidden hier, en het echte scrollen in .haven-plaatsinhoud
+     zelf, zodat de kop ("N van M plekken bezet") blijft staan terwijl de
+     tegels eronder scrollen. Zelfde buitenmaat als .haven-wachtrij (breedte,
+     max-height), geen positie/schuif-eigenschappen — die horen bij het
+     overlay-paneel (nog steeds gebruikt voor de volle plaats), niet hier. */
+  .haven-lege-kolom{ width:230px; flex-shrink:0; border-radius:var(--radius-md); border-width:1px; border-color:var(--line); background-color:var(--surface);
+    display:flex; flex-direction:column; overflow:hidden;
+    max-height:calc(100vh - 200px);
+}
+  /* De volle bakkenplaats als vast, altijd zichtbaar vlak — als overlay op de
+     onderkant van de tekening (rechtsonder, over het water), niet meer achter
+     een knop of in een schuifpaneel. Zelfde overlay-look als het oude
+     .haven-plaatspaneel.vanuit-onder (half-doorzichtige achtergrond, schaduw),
+     maar permanent en zonder greep. Anker aan de onderrand; de kop blijft staan
+     terwijl de rijen in .haven-plaatsinhoud eronder scrollen. De exacte boven-
+     en linkergrens wordt nog afgestemd (daar komt straks het uitklapdeel). */
+  .haven-vol-vlak{
+    position:absolute; z-index:3;
+    /* Rechts niet tegen de canvasrand, maar binnen de beige haven-doek
+       (.haven-water loopt niet tot de rand) — zo blijft het vlak binnen de
+       lijntjes/marges van de tekening. */
+    left:52%; right:4%; bottom:3%; top:auto; height:36%;
+    background: color-mix(in srgb, var(--bg) 94%, transparent);
+    border:1px solid var(--line); border-radius:8px;
+    box-shadow: var(--bevel-uit-diep), var(--shadow-3);
+    display:flex; flex-direction:column; overflow:hidden;
+    /* Uitklappen schuift de bovenrand omhoog; geen scroll — in rust zie je de
+       onderste eenheden, uitgeklapt alle rijen. */
+    transition:height .3s var(--ease);
+  }
+  .haven-vol-vlak.uitgeklapt{ height:76%; }
+  .haven-vol-vlak.doelwit{
+    border-color:var(--done);
+    background: color-mix(in srgb, var(--done) 12%, var(--surface));
+  }
+  /* Greep boven op het vlak om het uit/in te klappen — liggend, in het midden,
+     zoals de greep van het oude schuifpaneel. */
+  .haven-vol-greep{
+    position:absolute; top:-12px; left:50%; transform:translateX(-50%);
+    width:72px; height:22px; padding:0; border:0; z-index:4;
+    background:var(--surface-2); color:var(--text); cursor:pointer;
+    border-radius:9px 9px 0 0; box-shadow:var(--bevel-uit);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .haven-vol-greep .punt{ font-size:14px; line-height:1; }
+  .haven-vol-greep:active{ box-shadow:var(--bevel-in); }
+  .haven-wachtrij{ width:230px; flex-shrink:0; overflow-y:auto; overflow-x:hidden; border-radius:var(--radius-md); border-width:1px; border-color:var(--line); background-color:var(--surface); padding:0.625rem;
+    max-height:calc(100vh - 200px);
+}
+  .haven-wachtrij-kop{ margin-bottom:0.5rem; font-family:'JetBrains Mono', monospace; font-size:11px; font-weight:600; color:var(--text-dim);
+}
+  .haven-wachtrij-kop span{ color:var(--text);
+}
+  .haven-wachtrij-leeg{ margin:0px; font-size:11px; line-height:1.5; color:var(--text-dim);
+}
+  .haven-wachtrij-set{ margin-bottom:0.5rem; cursor:grab; user-select:none; border-radius:6px; border-width:0px; background-color:var(--surface-2); padding-left:0.5rem; padding-right:0.5rem; padding-top:0.5rem; padding-bottom:0.5rem;
+    box-shadow: var(--bevel-uit-diep);
+    touch-action:none;
+    -webkit-user-select:none;   /* Safari/iPad */
+}
+  /* Sleep je een set vanuit de haven hierheen, dan licht de kolom op — net
+     zoals een zone in de tekening dat doet. */
+  /* De kolom krijgt ruimte rechts voor de eigen scrollbalk; de systeembalk
+     zelf is weg, want twee balken naast elkaar is onzin. */
+  .haven-kolommen{ position:relative; }
+  .haven-wachtrij{ scrollbar-width:none; }
+  .haven-wachtrij::-webkit-scrollbar{ display:none; }
+  .haven-scrollbalk{
+    position:absolute; top:0; right:0; width:14px; height:100%;
+    background:var(--surface); border-radius:7px; cursor:pointer;
+    touch-action:none; z-index:4;
+  }
+  .haven-scrollduim{
+    width:10px; margin:0 2px; border-radius:5px;
+    background:var(--text-dim); cursor:grab; touch-action:none;
+    box-shadow: var(--bevel-uit);
+  }
+  .haven-scrollduim:active{ cursor:grabbing; background:var(--rust); }
+
+  /* Een set die je hebt aangetikt in Onderweg. Duidelijk maar rustig: hij
+     doet nog niets, hij staat klaar. */
+  .haven-wachtrij-set.gekozen{
+    box-shadow: var(--bevel-uit-diep), 0 0 0 2px var(--rust);
+  }
+  /* Het balkje onderin ("N bakken gekozen — tik nu...") is op verzoek
+     vervallen: wat je hebt aangetikt zie je al aan de tegel of het bakje
+     zelf. Nog een keer aantikken zet de keuze weer uit. */
+  .haven-wachtrij.doelwit{
+    border-color:var(--done);
+    background: color-mix(in srgb, var(--done) 12%, var(--surface));
+  }
+  .haven-lege-kolom.doelwit{
+    border-color:var(--done);
+    background: color-mix(in srgb, var(--done) 12%, var(--surface));
+  }
+  .haven-wachtrij-set.losgekoppeld{ opacity:0.6;
+}
+  .haven-wachtrij-set.wordtGesleept{ opacity:0.4;
+}
+  .haven-wachtrij-schip{ font-family:'Inter', sans-serif; font-size:13px; font-weight:600; color:var(--text);
+}
+  .haven-wachtrij-tijd{ margin-bottom:0.375rem; font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--text-dim);
+}
+  .haven-wachtrij-rij{ margin-bottom:0.25rem; display:flex; gap:0.25rem;
+}
+  .haven-wachtrij-bak{ overflow:hidden; white-space:nowrap; border-radius:3px; border-width:1px; padding-left:0.25rem; padding-right:0.25rem; padding-top:0.125rem; padding-bottom:0.125rem; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--text);
+    box-shadow: var(--bevel-uit);
+    /* Vast, geen flex-1: met flex-1 vulde een tegel met minder kolommen
+       (bijv. 1 breed naast een 3-breed tegel ernaast) toch de hele
+       rijbreedte, en oogde een enkele bak reusachtig terwijl drie bakken
+       naast elkaar juist klein bleven. Vaste celbreedte + havenBakBlokjes'
+       vaste breedte per tegel (zie daar) samen geven pas echt gelijke maat
+       voor gelijke vorm. text-overflow als vangnet voor een langere naam. */
+    flex: none; width: 58px; text-overflow: ellipsis;
+}
+  .haven-wachtrij-bak.leeg{ border-color:transparent; box-shadow:none;
+}
+  /* Eén los bakje dat je hebt aangetikt. Dezelfde ring als een gekozen set,
+     zodat je in één oogopslag ziet wat er klaarstaat. */
+  .haven-wachtrij-bak.gekozen{
+    box-shadow: var(--bevel-uit), 0 0 0 2px var(--rust);
+  }
+  /* Een bak die volgens de lijst nog moet komen: een open plek, geen bak. */
+  .haven-wachtrij-bak.ontbreekt{
+    border-color:var(--rust); border-style:dashed; box-shadow:none;
+    background:color-mix(in srgb, var(--rust) 8%, transparent);
+  }
+  /* Moet repareren (openBakStatusModal, src/06) — zelfde rust-kleur als de
+     badge op de planlijst-tegel en het tandwiel in de haventekening, maar
+     een volle rand: de bak ligt er wél, hij mag alleen niet geladen worden. */
+  .haven-wachtrij-bak.repareren{
+    border-color:var(--rust) !important; box-shadow:none;
+    background:color-mix(in srgb, var(--rust) 10%, transparent);
+  }
+  .haven-wachtrij-tijd.tekort{ color:var(--rust); }
+  /* het meebewegende blokje tijdens het slepen */
+  .haven-wachtrij-set.zweeft{ pointer-events:none; position:fixed; z-index:50; opacity:0.95; --tw-shadow:var(--shadow-3); --tw-shadow-colored:var(--shadow-3); box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+  @media (max-width: 900px){
+    .haven-kolommen{ flex-direction:column;
+ }
+    .haven-wachtrij{ max-height:220px; width:100%;
+ }
+  }
+
+  .focus-visible\:outline:focus-visible{ outline-style:solid;
+}
+
+  .focus-visible\:outline-2:focus-visible{ outline-width:2px;
+}
+
+  .focus-visible\:outline-offset-2:focus-visible{ outline-offset:2px;
+}
+
+  .active\:translate-y-0:active{ --tw-translate-y:0px; transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
