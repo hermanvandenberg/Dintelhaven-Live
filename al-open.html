@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Auteur: HvdB -->
+<!-- Maar één DintelLink tegelijk open (1.439). Hierheen gaat een tweede venster als DintelLink op
+     dit apparaat al open staat (zie src/01-basis/een-venster.js). Een losse pagina, zodat in dit
+     venster niets van de app meer draait: geen sync, geen AIS, geen opslag die door elkaar loopt.
+     ?overgenomen: dit was het open venster, maar in een ander venster koos iemand "Toch hier openen". -->
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none';">
+<meta name="referrer" content="no-referrer">
+<script>if (window.top !== window.self) { document.documentElement.style.display = 'none'; try { window.top.location = window.self.location.href; } catch (e) {} }</script>
+<link rel="icon" type="image/png" sizes="32x32" href="icoon/icon-32.png">
+<link rel="apple-touch-icon" href="icoon/apple-touch-icon.png">
+<title>DintelLink is al open</title>
+<link rel="stylesheet" href="lib/tokens.css">
+<style>
+  body{ margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:var(--bg); color:var(--text); font-family:system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  .kaart{ max-width:440px; margin:16px; padding:28px 24px; background:var(--surface);
+    border:1px solid var(--line); border-radius:14px; text-align:center; }
+  .kaart img{ width:64px; height:64px; }
+  h1{ font-size:22px; margin:12px 0 8px; }
+  p{ color:var(--text-dim); line-height:1.5; margin:0 0 20px; }
+  .knoppen{ display:flex; flex-direction:column; gap:10px; }
+  button{ font:inherit; font-size:16px; padding:12px 16px; border-radius:10px; cursor:pointer;
+    border:1px solid var(--line); background:var(--surface-2); color:var(--text); }
+  button.hoofd{ background:var(--rust); border-color:var(--rust); color:var(--op-rust); font-weight:600; }
+  .hint{ font-size:14px; margin:14px 0 0; min-height:1.5em; }
+</style>
+</head>
+<body>
+<div class="kaart" role="alert">
+  <img src="icoon/icon-192.png" alt="">
+  <h1 id="titel">DintelLink is al open</h1>
+  <p id="uitleg">DintelLink staat op dit apparaat al open in een ander venster of tabblad. Werk daar verder,
+    dan lopen de gegevens niet door elkaar.</p>
+  <div class="knoppen">
+    <button class="hoofd" id="sluit" type="button">Dit venster sluiten</button>
+    <button id="hier" type="button">Toch hier openen</button>
+  </div>
+  <p class="hint" id="hint"></p>
+</div>
+<script>
+(function(){
+  // Hetzelfde thema als de app: licht tenzij er een donker thema gekozen is.
+  var thema = 'light';
+  try{ thema = JSON.parse(localStorage.getItem('duwbakken-theme')) || 'light'; }catch(e){}
+  document.body.classList.toggle('light-theme', thema === 'light');
+  document.body.classList.toggle('splash-theme', thema === 'splash');
+  document.documentElement.style.colorScheme = thema === 'light' ? 'light' : 'dark';
+
+  var overgenomen = location.search.indexOf('overgenomen') !== -1;
+  if(overgenomen){
+    document.getElementById('titel').textContent = 'DintelLink is ergens anders open';
+    document.getElementById('uitleg').textContent = 'In een ander venster of tabblad op dit apparaat is DintelLink ' +
+      'geopend. Daar wordt nu verder gewerkt, dit venster doet niets meer.';
+    document.getElementById('hier').textContent = 'Hier weer openen';
+  }
+
+  var terug = 'DintelLink.html';
+  try{ terug = sessionStorage.getItem('dintellink-terug') || terug; }catch(e){}
+
+  function sluit(){
+    window.close();
+    // Lukt sluiten niet (de browser staat het niet altijd toe), dan blijft deze pagina staan.
+    setTimeout(function(){
+      document.getElementById('hint').textContent = 'Dit venster kon niet vanzelf dicht. Sluit het met het kruisje.';
+    }, 300);
+  }
+  document.getElementById('sluit').addEventListener('click', sluit);
+  document.getElementById('hier').addEventListener('click', function(){
+    try{ sessionStorage.setItem('dintellink-overnemen', '1'); }catch(e){}
+    location.replace(terug);
+  });
+  // Een tweede venster gaat meteen dicht als de browser dat toestaat; dan kom je bij het open venster uit.
+  if(!overgenomen) window.close();
+})();
+</script>
+</body>
+</html>
